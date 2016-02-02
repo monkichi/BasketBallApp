@@ -1,0 +1,93 @@
+<!-- the parent view - provides the gray listfragment background color -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:gravity="center_vertical"
+    android:padding="5dp">
+
+    <!-- the innner view - provides the white rectangle -->
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <!-- the icon view -->
+        <ImageView
+            android:id="@+id/team_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:scaleType="fitXY"
+            android:layout_alignParentLeft="true" />
+
+        <!-- the container view for the title and description -->
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/team_icon"
+            android:layout_centerVertical="true">
+
+            <!-- the title view -->
+            <TextView
+                android:id="@+id/team_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/WhiteSmoke"
+                android:textAppearance="@android:style/TextAppearance.Small" />
+
+            <TextView
+                android:id="@+id/captain_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/WhiteSmoke"
+                android:gravity="right"
+                android:layout_toRightOf="@+id/team_name"
+                android:textAppearance="@android:style/TextAppearance.Small" />
+
+            <!-- the description view -->
+            <TextView
+                android:id="@+id/team_league"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/WhiteSmoke"
+                android:layout_toRightOf="@+id/captain_name"
+                android:textAppearance="@android:style/TextAppearance.Small" />
+
+            <TextView
+                android:id="@+id/team_division"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/WhiteSmoke"
+                android:layout_toRightOf="@+id/team_league"
+                android:textAppearance="@android:style/TextAppearance.Small" />
+
+            <TextView
+                android:id="@+id/team_wins"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/WhiteSmoke"
+                android:layout_toRightOf="@+id/team_division"
+                android:textAppearance="@android:style/TextAppearance.Small" />
+
+            <TextView
+                android:id="@+id/team_losses"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/WhiteSmoke"
+                android:layout_toRightOf="@+id/team_wins"
+                android:textAppearance="@android:style/TextAppearance.Small" />
+
+            <TextView
+                android:id="@+id/game_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/WhiteSmoke"
+                android:layout_toRightOf="@+id/team_losses"
+                android:textAppearance="@android:style/TextAppearance.Small" />
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,62 @@
+<!-- the parent view - provides the gray listfragment background color -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:gravity="center_vertical"
+    android:padding="5dp">
+
+
+    <!-- the container view for the title and description -->
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true">
+
+        <!-- the description view -->
+        <TextView
+            android:id="@+id/game_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/WhiteSmoke"
+            android:gravity="center_horizontal"
+            />
+
+        <TextView
+            android:id="@+id/game_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/WhiteSmoke"
+            android:layout_toRightOf="@+id/game_date"
+            android:gravity="center_horizontal"
+             />
+
+        <TextView
+            android:id="@+id/team_name1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/WhiteSmoke"
+            android:layout_toRightOf="@+id/game_time"
+            android:gravity="center_horizontal"
+             />
+
+        <TextView
+            android:id="@+id/team_name2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/WhiteSmoke"
+            android:layout_toRightOf="@+id/team_name1"
+            android:gravity="center_horizontal"
+             />
+
+        <TextView
+            android:id="@+id/game_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/WhiteSmoke"
+            android:layout_toRightOf="@+id/team_name2"
+            android:gravity="center_horizontal"
+            />
+
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,94 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:orientation="vertical"
+    >
+    <!-- Search Capability Widget-->
+    <SearchView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/search"
+        android:layout_above="@+id/cat_layout"/>
+
+
+    <!-- the container view for the team categories -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/cat_layout"
+        >
+
+   <!--     <TextView
+            android:id="@+id/empty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/WhiteSmoke"
+            android:layout_gravity="center_horizontal"
+            android:text=" "
+            android:textAppearance="@android:style/TextAppearance.Small" />-->
+        <TextView
+            android:id="@+id/team_name_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/WhiteSmoke"
+            android:textAppearance="@android:style/TextAppearance.Small" />
+
+        <TextView
+            android:id="@+id/captain_name_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/WhiteSmoke"
+            android:layout_toRightOf="@+id/team_name"
+            android:textAppearance="@android:style/TextAppearance.Small" />
+
+        <TextView
+            android:id="@+id/team_league_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/WhiteSmoke"
+            android:layout_toRightOf="@+id/captain_name"
+            android:textAppearance="@android:style/TextAppearance.Small" />
+
+        <TextView
+            android:id="@+id/team_division_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/WhiteSmoke"
+            android:layout_toRightOf="@+id/team_league"
+            android:textAppearance="@android:style/TextAppearance.Small" />
+
+        <TextView
+            android:id="@+id/team_wins_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/WhiteSmoke"
+            android:layout_toRightOf="@+id/team_division"
+            android:textAppearance="@android:style/TextAppearance.Small" />
+
+        <TextView
+            android:id="@+id/team_losses_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/WhiteSmoke"
+            android:layout_toRightOf="@+id/team_wins"
+            android:textAppearance="@android:style/TextAppearance.Small" />
+
+
+    </LinearLayout>
+
+    <!--List View of Team Rows-->
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="2dp"
+        android:layout_below="@id/cat_layout"
+         />
+
+
+</LinearLayout>
